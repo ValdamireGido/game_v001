@@ -1,0 +1,7 @@
+SOURCE_FOLDER="../source/target/"
+EXTERNALS_FOLDER="../source/externals"
+
+PRODUCT_FOLDER="../product"
+
+PRODUCT_FOLDER_DEBUG=PRODUCT_FOLDER .. "/debug"
+PRODUCT_FOLDER_RELEASE=PRODUCT_FOLDER .. "/release"
