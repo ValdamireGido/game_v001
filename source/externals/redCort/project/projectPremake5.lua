@@ -13,7 +13,7 @@ project "redCort"
 	pchsource "../source/redCort/EngineStdAfx.cpp"
 	
 	includedirs { 
-		"../source",
+		"../source/redcort",
 		"../source/redcort/video",
 		"../../glm",
 		"../../vulkan/1.0.17.0/Include",
