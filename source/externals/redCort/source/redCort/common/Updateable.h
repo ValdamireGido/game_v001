@@ -15,21 +15,11 @@ namespace redcort
 		static std::chrono::nanoseconds GetTimeDiffSinceLast();
 
 	public:
-		Updateable();
-		virtual ~Updateable();
+		Updateable() = default;
+		virtual ~Updateable() = default;
 
 		virtual void Update(std::chrono::nanoseconds frameTime) = 0;
 		virtual bool ShouldWork() const = 0;
-	};
-
-	class ParallelUpdateable
-		: public Updateable
-	{
-	public:
-		virtual ~ParallelUpdateable();
-
-	private:
-
 	};
 }
 #endif // __Updateable_h_include__

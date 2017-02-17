@@ -80,11 +80,11 @@ namespace redcort
 	}
 }
 
-#define r_assert_(expr) redcort::r_assert_impl_c(expr, _CRT_WIDE(__FILE__), (unsigned)(__LINE__), #expr)
-#define r_assert_2(expr, format, ...) redcort::r_assert_impl_c(expr, _CRT_WIDE(__FILE__), (unsigned)(__LINE__),format, ##__VA_ARGS__)
+#define RASSERT(expr) redcort::r_assert_impl_c(expr, _CRT_WIDE(__FILE__), (unsigned)(__LINE__), #expr)
+#define RASSERT2(expr, format, ...) redcort::r_assert_impl_c(expr, _CRT_WIDE(__FILE__), (unsigned)(__LINE__),format, ##__VA_ARGS__)
 
-#define d_assert_(expr) (void)( (!!(expr)) || ( _CrtDbgReport( _CRT_ASSERT, __FILE__, __LINE__, NULL, "" ), 0 ) )
-#define d_assert_2(expr, format, ...) (void)( (!!(expr)) || ( _CrtDbgReport( _CRT_ASSERT, __FILE__, __LINE__, NULL, format, ##__VA_ARGS__ ), 0 ) )
+#define DASSERT(expr) (void)( (!!(expr)) || ( _CrtDbgReport( _CRT_ASSERT, __FILE__, __LINE__, NULL, "" ), 0 ) )
+#define DASSERT2(expr, format, ...) (void)( (!!(expr)) || ( _CrtDbgReport( _CRT_ASSERT, __FILE__, __LINE__, NULL, format, ##__VA_ARGS__ ), 0 ) )
 
 namespace 
 {
@@ -92,9 +92,9 @@ namespace
 	{
 		bool check = false;
 
-		//r_assert_(check);
+		//RASSERT(check);
 
-		r_assert_2(check, "test %d", (int)check);
+		RASSERT2(check, "test %d", (int)check);
 	}
 }
 

@@ -5,7 +5,7 @@ namespace redcort
 {
 	void Updateable::Update(Updateable* _updateable)
 	{
-		d_assert_(_updateable);
+		DASSERT(_updateable);
 		while(_updateable->ShouldWork())
 		{
 			_updateable->Update(GetTimeDiffSinceLast());
@@ -22,10 +22,4 @@ namespace redcort
 		lastTp = system_clock::now();
 		return diff.time_since_epoch();
 	}
-
-	Updateable::Updateable()
-	{}
-	
-	Updateable::~Updateable()
-	{}
 }

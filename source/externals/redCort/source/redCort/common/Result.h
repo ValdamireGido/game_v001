@@ -5,13 +5,14 @@ namespace redcort
 {
 	enum class Result
 	{
-		  Success
-		, Failed
+		Success					= 0, 
+		Failed					= 1, 
+		InvalidPointer			= 2, 
 
-		, UnsuportedDriver
+		UnsuportedDriver		= 3, 
 
-		, StreamReadingFailed
-		, FileCannotBeOpened
+		StreamReadingFailed		,
+		FileCannotBeOpened		
 	};
 }
 
