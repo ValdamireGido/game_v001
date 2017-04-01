@@ -36,7 +36,7 @@ int main(int argc, char** argv)
 	VkApplicationInfo vkApplicationInfo;
 	vkApplicationInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
 	vkApplicationInfo.pNext = nullptr;
-	vkApplicationInfo.pApplicationName = redcort::info::GetApplicaitonName().c_str();
+	vkApplicationInfo.pApplicationName = redcort::info::GetApplicationName().c_str();
 	vkApplicationInfo.applicationVersion = redcort::info::GetApplicationVersion();
 	vkApplicationInfo.pEngineName = redcort::info::GetEngineName().c_str();
 	vkApplicationInfo.engineVersion = redcort::info::GetEngineVersion();
@@ -117,6 +117,6 @@ int main(int argc, char** argv)
 	});
 
 	drawableUpdateThread->join();
-
+	
 	return EXIT_SUCCESS;
 }

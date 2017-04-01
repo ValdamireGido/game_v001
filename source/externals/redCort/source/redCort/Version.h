@@ -10,7 +10,7 @@ namespace redcort
 		std::string GetEngineName();
 		uint32_t GetEngineVersion();
 
-		std::string GetApplicaitonName();
+		std::string GetApplicationName();
 		uint32_t GetApplicationVersion();
 	}
 }

@@ -6,7 +6,12 @@
 namespace redcort
 {
 	namespace video
-	{}
+	{
+		class Driver
+		{
+
+		};
+	}
 }
 
 #endif // !defined(__Driver_h_include__)

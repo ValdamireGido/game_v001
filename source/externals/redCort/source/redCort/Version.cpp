@@ -23,7 +23,7 @@ namespace redcort
 			return g_engineVersion;
 		}
 
-		std::string GetApplicaitonName()
+		std::string GetApplicationName()
 		{
 			return g_applicationName;
 		}
