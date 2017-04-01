@@ -1,0 +1,3 @@
+[submodule "source/externals/redCort"]
+	path = source/externals/redCort
+	url = https://github.com/ValdamireGido/redCort.git
