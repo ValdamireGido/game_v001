@@ -12,7 +12,7 @@ solution "Game_v001"
 	defines { "_SCL_SECURE_NO_WARNINGS", "_CRT_SECURE_NO_WARNINGS" }	
 	startproject "Game"
 	
-	local externalsPath = "../source/externals/"
+	local externalsPath = "../externals/"
 	dofile(externalsPath .. "redCort/project/projectPremake5.lua")
 	
 -- Project settings
